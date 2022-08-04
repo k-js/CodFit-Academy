@@ -3,7 +3,7 @@ import "./CadClientes.css";
 
 function CadClientes() {
     return (
-      <p></p>
+      <p>oioioi</p>
     )
 }
 
