@@ -5,7 +5,7 @@
 <h1 align="center" style='font-family: Righteous'> COT FIT - Academy 💪 </h1>
 <img src="./src/assets/img/BANNER_COT_FIT.png">
 
-<h2>🎯 Objetivo 🎯</h2>
+<h2>🎯 Objetivo 💡</h2>
 
 
 Esse projeto tem como objetivo, criar um landing page funcional, utilizando API de uma Academia que foi desenvolvido no módulo passado. Utilizando React.JS como base.
@@ -21,7 +21,7 @@ Baseado em componentes: crie componentes encapsulados que gerenciam seu estado e
 Aprenda uma vez, escreva em qualquer lugar: não fazemos suposições sobre o restante de sua pilha de tecnologia, para que você possa desenvolver novos recursos no React sem reescrever o código existente. O React também pode renderizar no servidor usando Node e aplicativos móveis de energia usando React Native .
 ```
 
-<h3>💻 Instalação da Aplicação 🚀</h3>
+<h3>💻 Instalação da Aplicação 🛠️</h3>
 Para iniciar nossa aplicação, é necessária a instalação das configurações iniciais fornecidas pelo React através do create-react-app. Para instalar podemos utilizar dois métodos, através do yarn ou npm.
 
 ```
@@ -76,7 +76,7 @@ Abrindo com Yarn:
 Assim que o comando for executado, o navegador será automaticamente aberto com a página padrão do React.
 ```
 
-<h2>💻 Explicando alguns NPM's </h2>
+<h2>💻 Explicando alguns NPM's 🔩 </h2>
 
 No diretório do projeto, você pode executar:
 ```
@@ -91,6 +91,18 @@ Abra http://localhost:3000 para visualizá-lo em seu navegador.
 
 Inicia o executor de teste no modo de relógio interativo.
 Consulte a seção sobre como executar testes para obter mais informações.
+```
+```
+                            [NPM/YARN VITE ]
+Vite é uma ferramenta de construção para front-end, ele provê uma ferramenta de criação muito mais rápida e opinativa pronta para uso.                         
+
+>> yarn add vite-react --dev
+```
+```
+                            [React Router DOM]
+O react-router-dom é uma biblioteca padrão para que você consiga fazer o roteamento das páginas da sua aplicação de forma dinâmica.
+
+>> npx create-react-app react-rotas
 ```
 
 ```
