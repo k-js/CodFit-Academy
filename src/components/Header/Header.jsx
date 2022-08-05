@@ -1,10 +1,9 @@
 import react from "react";
 import "./Header.css";
-import {ReactComponent as Logo} from '../../assets/img/logo.png';
-
+import {Link} from "react-router-dom"
 function Header() {
     return (
-        <header className={S.header}>
+        <header >
       <Link className='titulo' to='/'>Super Mario Academia</Link>
       <nav>
         <Link className='subtitulo' to='/home' >Home</Link>
