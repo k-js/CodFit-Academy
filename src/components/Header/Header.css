@@ -5,8 +5,8 @@
     align-items: center;
     justify-content: space-between;
     padding-left: 20px;
-    background-color: var(--preto);
-    color: var(--primaria);
+    background-color: blue;
+    color: whitesmoke;
   }
   
   .header > nav {
@@ -15,6 +15,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--primaria);
-    color: var(--preto);
+    background-color: blue;
+    color: whitesmoke;
   }
