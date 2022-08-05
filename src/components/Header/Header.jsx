@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 
 function Header() {
   return (
-      <header className={header}>
+      <header className='header'>
     <Link className='titulo' to='/'>COT Fit - Academy</Link>
     <nav>
       <Link className='subtitulo' to='/home' >Home</Link>
