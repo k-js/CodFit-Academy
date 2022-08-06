@@ -26,10 +26,6 @@
     width: 25%;
 }
 
-.formCadastro>label{
-    font-size: 12px;
-}
-
 .formCadastro>input{
     height: 30px;
     margin-bottom: 20px;
