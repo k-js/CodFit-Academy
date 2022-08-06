@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./CadClientes.css";
 import { cpf } from 'cpf-cnpj-validator'; 
+{/*import {postCadastro} from '../../service/api'*/}
 
 const CadClientes = () => {
   const [inputEmail, setInputEmail] = useState('')
@@ -73,22 +74,21 @@ function limpaForm() {
   return (
     <section className='cadastro'>
       <div className='text'>
-        <h3>Faça seu cadastro aqui</h3>
+        <h1>CADASTRO</h1>
         <p>oioioi quero cadastro,</p>
         <br></br>
         <p>TESTE TESTE</p>
       </div>
 
       <form className='formCadastro'>
-        <label>Nome:</label>
-        <input type="text" value={inputNome} onChange={({target})=>handleInputNome(target)} />
-        <label>Telefone:</label>
-        <input type="text" value={inputTel} onChange={({target})=>handleInputTel(target)}/>
+        <input placeholder="Nome" type="text" value={inputNome} onChange={({target})=>handleInputNome(target)} />
+        
+        <input placeholder="Telefone" type="text" value={inputTel} onChange={({target})=>handleInputTel(target)}/>
 
-        <label>E-mail:</label>
-        <input type="email" value={inputEmail} onChange={({target})=>handleInputEmail(target)}/>
-        <label>CPF:</label>
-        <input type="text" value={inputCPF} onChange={({target})=>handleInputCPF(target)}/>
+        <input placeholder="E-mail" type="email" value={inputEmail} onChange={({target})=>handleInputEmail(target)}/>
+       
+        <input placeholder="CPF" type="text" value={inputCPF} onChange={({target})=>handleInputCPF(target)}/>
+       
         <div className='radioInput'>
           <input type="radio" name='genero'  value="masculino" onChange={({target})=>handleInputGenero(target)}/>
           <label htmlFor="Masculino">Masculino</label>
