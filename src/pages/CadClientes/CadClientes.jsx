@@ -74,10 +74,8 @@ function limpaForm() {
   return (
     <section className='cadastro'>
       <div className='text'>
-        <h1>CADASTRO</h1>
-        <p>oioioi quero cadastro,</p>
-        <br></br>
-        <p>TESTE TESTE</p>
+        <h1>Ainda não é um usuário registrado?</h1>
+        <p>Cadastre-se e venha fazer parte da família Cot-fit também!</p>
       </div>
 
       <form className='formCadastro'>
