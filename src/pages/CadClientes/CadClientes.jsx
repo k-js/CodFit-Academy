@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./CadClientes.css";
 import { cpf } from 'cpf-cnpj-validator'; 
-{/*import {postCadastro} from '../../service/api'*/}
+import {postCadastro} from '../../service/api';
 
 const CadClientes = () => {
   const [inputEmail, setInputEmail] = useState('')
@@ -9,6 +9,10 @@ const CadClientes = () => {
   const [inputNome, setInputNome] = useState('')
   const [inputTel, setInputTel] = useState('')
   const [inputGenero, setInputGenero] = useState('')
+
+
+  
+
 
   function handleInputEmail(target){
     setInputEmail(target.value)
@@ -51,13 +55,17 @@ const CadClientes = () => {
     }
   }
 
-  function cadastrar() {
-    console.log("EMail: " + inputEmail);
-    console.log("cpf: " + inputCPF);
-    console.log("Nome: " + inputNome);
-    console.log("Telefone: " + inputTel);
-    console.log("Genero: " + inputGenero);
-    
+  function cadastrar() { 
+    const dadosForm = { 
+      email: inputEmail,
+      cpf: inputCPF,
+      nome: inputNome,
+      telefone: inputTel,
+      genero: inputGenero, };
+
+    console.log("logar dados form");
+    console.log(dadosForm);
+    postCadastro(dadosForm);
 
     limpaForm();
     
