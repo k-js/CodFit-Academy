@@ -56,7 +56,7 @@ Para criar o projeto em uma pasta existente utilize o comando create-react-app .
 ```
 
 ```
-                      [Criação com npx:]
+                        [Criação com npx:]
 A criação com npx utiliza os mesmos comandos, mas sem a necessidade de ter o create-react-app instalado:
 
 >> npx create-react-app meu-app-exemplo
@@ -80,6 +80,7 @@ Assim que o comando for executado, o navegador será automaticamente aberto com 
 
 No diretório do projeto, você pode executar:
 ```
+
                             [NPM START]
 
 Executa o aplicativo no modo de desenvolvimento.
@@ -99,9 +100,10 @@ Vite é uma ferramenta de construção para front-end, ele provê uma ferramenta
 >> yarn add vite-react --dev
 ```
 ```
-                            [React Router DOM]
+                            [NPM React Router DOM]
 O react-router-dom é uma biblioteca padrão para que você consiga fazer o roteamento das páginas da sua aplicação de forma dinâmica.
 
+>> npm install react-router-dom
 >> npx create-react-app react-rotas
 ```
 
@@ -162,6 +164,7 @@ root.render(<HelloAcademy name="COT FIT" />);
 - `CORS`
 - `JS`
 - `CSS`
+- `ROUTES`
   
   ##     👨🏻‍💻 Autores  🚀 ##
 
