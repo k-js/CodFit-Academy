@@ -1,12 +1,13 @@
 import React from "react";
 import imgHome from "../../assets/img/conteudo.png";
 import S from "./Home.module.css";
+import {Link} from "react-router-dom"
 
 const Home = () => {
   return (
     <main>
       <div className={S.inner}>
-        <section className={S.section} id="banner">
+        <section className={S.section}>
           <div className={S.content}>
             <header>
               <h1 className={S.h1}>
@@ -24,9 +25,9 @@ const Home = () => {
               egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit
               nullam.
             </p>
-            <button className={S.btn}><a href="#" className={S.a}>
+            <Link to="/planos" className={S.btn}>
                   Learn More
-                </a></button>
+            </Link>
           </div>
           <span className={S.image}>
             <img className={S.img} src={imgHome} alt="" />
