@@ -8,7 +8,7 @@ function Header() {
     <Link className='titulo' to='/'>COT Fit - Academy</Link>
     <nav>
       <Link className='subtitulo' to='/home' >Home</Link>
-      <Link className='subtitulo' to='/sobre' >Sobre</Link>
+      <Link className='subtitulo' to='/CadClientes' >Cadastro</Link>
       <Link className='subtitulo' to='/planos' >Planos</Link>
     </nav>
   </header>
