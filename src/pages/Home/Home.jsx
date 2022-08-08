@@ -4,7 +4,7 @@ import S from "./Home.module.css";
 
 const Home = () => {
   return (
-    <main className={S.main}>
+    <main>
       <div className={S.inner}>
         <section className={S.section} id="banner">
           <div className={S.content}>
@@ -24,13 +24,9 @@ const Home = () => {
               egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit
               nullam.
             </p>
-            <ul className={S.ul}>
-              <li className={S.li}>
-                <a href="#" className={S.a}>
+            <button className={S.btn}><a href="#" className={S.a}>
                   Learn More
-                </a>
-              </li>
-            </ul>
+                </a></button>
           </div>
           <span className={S.image}>
             <img className={S.img} src={imgHome} alt="" />
