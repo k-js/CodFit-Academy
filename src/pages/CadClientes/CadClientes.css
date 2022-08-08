@@ -1,0 +1,72 @@
+.cadastro{
+    display: grid;
+    background-color: #155db1;
+    border: 3px solid ;
+    border-radius: 7px;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 15px;
+    align-items: center;
+}
+
+.text{
+    width: 60%;
+    height: 40%;
+    margin-right: 15px;
+    margin-left: 75px;
+    font-size: 15px;
+    color: black;
+    display: grid;
+    text-align: center;
+}
+
+.text>h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: black;
+    display: grid;
+}
+
+.formCadastro{
+    display: grid;
+    flex-direction: column;
+    width: 25%;
+}
+
+.formCadastro>input{
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-color: #002973;
+    margin-right: 15px;
+    margin-left: 75px;
+}
+
+.formCadastro>button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color:#002973;
+    border: #ffffff 1px solid;
+    margin-right: 15px;
+    margin-left: 75px;
+}
+
+.radioInput{
+    margin-bottom: 23px;
+    display: flex;
+    margin-right: 15px;
+    margin-left: 75px;
+}
+
+.radioInput>label{
+    margin-right: 30px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-left: 55px;
+}
