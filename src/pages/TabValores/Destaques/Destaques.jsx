@@ -16,6 +16,8 @@ export default function Destaques() {
         <Card
           imagem={Mensal}
           p1="Apenas R$ 59,99 (Sem fidelidade)"
+          url="/CadClientes"
+          textoBotao="Matricular"
         />
 
       </aside>
@@ -24,8 +26,10 @@ export default function Destaques() {
         <Card 
           imagem={Anual}
           p1="Apenas 599,99 ou 12x de 49,99 (Com fidelidade)"
-        
+          url="/CadClientes"
+          textoBotao="Matricular"
         />
+
       </aside>
     </section>
   );
