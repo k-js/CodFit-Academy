@@ -1,35 +1,38 @@
-.flip-card {
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    perspective: 1000px; 
-    border-radius: 100%;
+.flipCard {
+    background-color: rgba(6, 212, 248, 0.756);
+    width: 800px;
     display: flex;
-  }
-  
-  .flip-card-front,
-  .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; 
-    backface-visibility: hidden;
-    border-radius: 100%;
     flex-direction: row;
+    justify-content: space-between;
+    /* gap: 30px; */
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.347);
+    box-shadow: 2px 2px 2px 2px grey;
   }
   
-  .flip-card-front {
-    background-color: #bbb;
+  .frente {
+    background-color: white;
     color: black;
     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 610px;
+    gap: 15px;
+    align-items: center;
   }
-  .flip-card-front img {
+
+  img{
+    width: 600px;
+    height: 350px;
+  }
+
+  .nomeCard{
     width: 100%;
-    height: 170px;
-    border-radius: 10px;
+    text-align: center;
   }
   
-  .flip-card-back {
+  /* .flip-card-back {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,31 +46,32 @@
   .flip-card-back p {
     justify-content: left;
   }
-  
+   */
   .link{
-  width: 100%;
-  height: 45px;
-  background-color: rgba(6, 212, 248, 0.756);;
+  width: 150px;
+  height: 30px;
+  background-color: rgba(6, 212, 248, 0.756);
   border: none;
+  text-decoration: none;
   border-radius: 7px;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
-  line-height: 45px;
   color: black;
+  padding: 3px;
+  align-self: center;
+  margin-bottom: 5px;
   }
 
   .link:hover{
   border-color: rgb(252, 205, 245);
-    border-width: 2px;
-    border-style: solid;
     color: rgb(205, 252, 251);
     background: black;
   }
 
-  @media (min-width: 760px) {
+  /* @media (min-width: 760px) {
     .flip-card {
       height: 250px;
       width: 250px;
     }
-  }
+  } */
