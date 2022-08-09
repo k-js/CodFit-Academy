@@ -33,8 +33,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .flip-card-back {
     background-color: #07a0c3;
     color: white;
     transform: rotateY(180deg);
@@ -44,6 +42,18 @@
 
   .flip-card-back p {
     justify-content: left;
+  }
+  
+  .link{
+    width: 100%;
+  height: 45px;
+  background-color: rgba(6, 212, 248, 0.756);;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 45px;
   }
 
   @media (min-width: 760px) {
