@@ -48,7 +48,7 @@
 
 .desconto, .foco{
   font-size:xx-large;
-  color: gold;
+  color: rgba(6, 212, 248, 0.756);
 }
 .desconto{
   transition: all 0.3s;
