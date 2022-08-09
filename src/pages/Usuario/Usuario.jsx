@@ -40,7 +40,7 @@ const Usuario = () => {
     <h1>Página do usuário</h1>
     <p>Seus dados são sigilosos não compartilhe com ninguém.</p>
   </div>
-    <form className='formCadastro'>
+    <form className='formUsuario'>
         <input className ="usuario" placeholder="CPF" type="number" value={inputCPF} onChange={({target})=>handleInputCPF(target)}/>
         <input className ="usuario"  placeholder="SENHA" type="password"value={inputSenha} onChange={({target})=>handleInputSenha(target)}/>
         

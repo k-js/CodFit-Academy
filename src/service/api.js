@@ -21,8 +21,8 @@ export const getUsuario = async (body) => {
   console.log(body.cpf);
   const response = await instancia.get(`/clientes/${body.cpf}`);
   const json = await response.data;
-  
-  if(json.length > 0){
+  console.log(json)
+  if(json.length > 0 && body.cpf.length>0){
     alert("CPF válido");
     //redirecionar para rota da pagina home
   }else{
