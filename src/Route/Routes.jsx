@@ -5,6 +5,7 @@ import Home from '../pages/Home/Home.jsx'
 import CadClientes from '../pages/CadClientes/CadClientes';
 import Planos from '../pages/Planos/Planos.jsx';
 import Usuario from '../pages/Usuario/Usuario.jsx';
+import AlteraUsuario from '../pages/AlteraUsuario/AlteraUsuario.jsx';
 
 const Routes = () => {
   return (
@@ -16,9 +17,10 @@ const Routes = () => {
       <Route path='/CadClientes' element={<CadClientes/>}/>
       <Route path='/planos' element={<Planos/>}/>
       <Route path='/Usuario' element={<Usuario/>}/>
+      <Route path='/AlteraUsuario' element={<AlteraUsuario/>}/>
     </Switch>
     </BrowserRouter>
-  )
+  ) 
 }
 
 export default Routes

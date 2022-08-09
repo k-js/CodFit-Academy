@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { getUsuario } from '../../service/api';
 import "./Usuario.css";
 
 
 
 const Usuario = () => {
+  const navigate = useNavigate()
     const [inputSenha, setInputSenha] = useState('')
     const [inputCPF, setInputCPF] = useState('')
  
@@ -16,7 +18,7 @@ const Usuario = () => {
     setInputCPF(target.value)
   }
 
-    function logar() { 
+   async function  logar() { 
         const dadosForm = { 
             cpf: inputCPF,
             senha: inputSenha,
@@ -24,8 +26,16 @@ const Usuario = () => {
     
         console.log("logar dados form");
         console.log(dadosForm);
-        getUsuario(dadosForm);
-    
+        const json = await getUsuario(dadosForm)
+        if(json.length > 0){
+          alert("CPF válido");
+          navigate("/AlteraUsuario")
+          //redirecionar para rota da pagina home
+          
+        }else{
+          alert("CPF inválido");
+        }
+
        limpaForm();
 
        function limpaForm() {

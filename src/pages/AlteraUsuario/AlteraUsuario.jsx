@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
-import { postProduto } from '../../service/api.js'
+import { putUsuario } from '../../service/api.js'
 import S from './AlteraUsuario.module.css'
+import Fieldsets from '../../components/Fieldsets/Fieldsets.jsx'
+import Button from '../../components/Button/Button.jsx'
 
 const AlteraUsuario = () => {
   const campos = [
-    { keyState: 'nome_completo', label: 'Nome', type: 'text' },
+    { keyState: 'nome', label: 'Nome', type: 'text' },
     { keyState: 'telefone', label:'Telefone', type: 'text' },
     { keyState: 'cpf', label:'cpf', type: 'text' }
 ]
@@ -28,7 +30,7 @@ const AlteraUsuario = () => {
 
   }
   function handleSave() {
-    postProduto(dadosForm)
+    putUsuario(cpf,dadosForm)
   }
   return (
 
@@ -47,11 +49,9 @@ const AlteraUsuario = () => {
         )
       })}
       <section className={S.buttons}>
-
         <Button text='cancelar' color='preto' />
         <Button text='Excluir' color='preto' />
-        <Button text='Salvar' color='amarelo' onclick={handleSave} />
-
+        <Button text='Salvar' color='amarelo' onclick={handleSave()} />
       </section>
     </form>
 

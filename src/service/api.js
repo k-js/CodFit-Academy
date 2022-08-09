@@ -21,13 +21,14 @@ export const getUsuario = async (body) => {
   console.log(body.cpf);
   const response = await instancia.get(`/clientes/${body.cpf}`);
   const json = await response.data;
-  
-  if(json.length > 0){
-    alert("CPF válido");
-    //redirecionar para rota da pagina home
-  }else{
-    alert("CPF inválido");
-  }
   //return json;
-  return "ok";
+  return json;
 };
+
+export const putUsuario = async(cpf,body) => {
+  const response = await instancia.patch(`/clientes/${body.cpf}`, body);
+  const json = await response.data.msg;
+  console.log(json)
+  return json;
+}
+
