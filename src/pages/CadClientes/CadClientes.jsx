@@ -49,9 +49,9 @@ const CadClientes = () => {
 
   function validaCPF(){
     if(cpf.isValid(inputCPF)){
-      alert("CPF rodando")
+      alert("CPF válido ")
     }else{
-      alert("CPF falhou")
+      alert("CPF inválido")
     }
   }
 
