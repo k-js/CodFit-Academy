@@ -30,8 +30,8 @@ export default function Destaques() {
         <h2>Trimestral</h2>
         <Card 
           imagem={Trimestral}
-          p1="Apenas 599,99 ou 12x de 49,99 (Com fidelidade)"
-          p2="50% Off de R$ 599,99 por R$ 299,99 (não válido para parcelados)"
+          p1="Apenas 139,99"
+          p2="50% Off de R$ 139,99 por R$ 69,99"
           url="/CadClientes"
           textoBotao="Matricule-se"
         />
