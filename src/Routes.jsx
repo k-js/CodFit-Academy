@@ -1,9 +1,26 @@
 import React from 'react'
+import { useState } from "react";
+import  {  BrowserRouter as Router,  Routes as Switch,  Route,  Link} from "react-router-dom";
+import TabValores from "../src/pages/TabValores/TabValores";
 
 function Routes() {
-  return (
-    <div>Routes</div>
-  )
-}
+  const [fade, setFade] = useState(true)
+  
+   return (
+    
+     <Router>
 
-export default Routes
+       <div>
+             <Switch> 
+                 <Route path="/Planos" element={<TabValores/>} /> 
+
+                 </Switch>
+                
+    
+          </div>    
+        </Router>
+       
+      );
+    }
+    
+    export default Routes;

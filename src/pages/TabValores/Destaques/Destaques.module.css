@@ -1,0 +1,46 @@
+.destaques__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+  }
+  .destaques__container h1{
+    margin-bottom: 2.5rem;
+    font-family: Indie;
+    font-size: 35px;
+    color: #413f42;
+    justify-content: center;
+  }
+  .destaques__container small {
+    margin-bottom: 2.5rem;
+    font-family: Indie;
+    font-size: 25px;
+    color: #413f42;
+    justify-content: center;
+  }
+
+  .card_titulo__container {
+    display: flex;
+    /* flex-direction:column; */
+    align-items: left;
+    margin-left: 5%;
+    width: 100%;
+    justify-content:center
+  }
+
+  .card_titulo__container h2 {
+    margin: 2.5rem 0;
+    margin-right: 5%;
+  }
+  
+  @media (min-width: 760px) {
+    
+    .destaques__container h1 {
+      grid-column: 1 / span 3;
+      text-align: center;
+      font-size: 40px;
+    }
+    .card_titulo__container h2 {
+      font-size: 25px;
+    }
+  }

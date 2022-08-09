@@ -1,11 +1,17 @@
-import react from "react";
-import "./TabValores.css";
+// import Carrossel from "./Carrossel/Carrossel";
+import Destaques from "./Destaques/Destaques";
+import S from "./TabValores.css";
 
-function TabValores() {
-    return (
-        <p></p>
-    )
+
+
+export default function Planos() {
+
+  return (
+    <main className={S.TabValores}>
+      
+      <section className={S.destaques}>
+        <Destaques />
+      </section>
+    </main>
+  );
 }
-
-
-export default TabValores;
