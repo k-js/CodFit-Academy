@@ -1,0 +1,25 @@
+.usuario{
+    display: grid;
+    flex-direction: column;
+    width: 25%;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-color: #002973;
+    margin-right: 15px;
+    margin-left: 75px;
+}
+
+.formCadastro{
+    display: grid;
+    flex-direction: column;
+    width: 25%;
+}
+.formCadastro>input{
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-color: #002973;
+    margin-right: 15px;
+    margin-left: 35px;
+}
