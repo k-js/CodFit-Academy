@@ -9,8 +9,10 @@ function Footer() {
         
         (ao lado do Resilia)
         Tel.: (41) 3538-0000
-        
-        contato@codfitcademia.com.br</p>
+        <span>
+        <a href='mailto:contato@codfitcademia.com.br'></a>
+        </span>
+        </p>
     )
 }
 
