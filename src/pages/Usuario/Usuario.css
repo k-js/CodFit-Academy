@@ -2,24 +2,39 @@
     display: grid;
     flex-direction: column;
     width: 25%;
-    height: 30px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border-color: #002973;
-    margin-right: 15px;
-    margin-left: 75px;
+
 }
 
 .formCadastro{
     display: grid;
     flex-direction: column;
-    width: 25%;
+    width: 100%;
+    margin-right: 5px;
+    margin-left: 75px;
 }
-.formCadastro>input{
-    height: 30px;
-    margin-bottom: 20px;
+.login{
+    display: grid;
+    background-color: #155db1;
+    border: 3px solid ;
+    border-radius: 7px;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 400px;
+    margin-right: 450px;
+    padding: 15px;
+    align-items: center;
+}
+.button{
+    display: grid;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+    margin-left: 82px;
     border-radius: 8px;
-    border-color: #002973;
-    margin-right: 15px;
-    margin-left: 35px;
+    background-color: #155db1;
+    gap: 50px;
+   
+   
 }
