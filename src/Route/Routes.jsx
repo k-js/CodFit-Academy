@@ -17,7 +17,7 @@ const Routes = () => {
       <Route path='/CadClientes' element={<CadClientes/>}/>
       <Route path='/planos' element={<Planos/>}/>
       <Route path='/Usuario' element={<Usuario/>}/>
-      <Route path='/AlteraUsuario' element={<AlteraUsuario/>}/>
+      <Route path='/AlteraUsuario/:cpf' element={<AlteraUsuario/>}/>
     </Switch>
     </BrowserRouter>
   ) 

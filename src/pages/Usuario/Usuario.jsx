@@ -29,7 +29,7 @@ const Usuario = () => {
         const json = await getUsuario(dadosForm)
         if(json.length > 0){
           alert("CPF válido");
-          navigate("/AlteraUsuario")
+          navigate("/AlteraUsuario/:cpf")
           //redirecionar para rota da pagina home
           
         }else{

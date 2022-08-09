@@ -26,7 +26,7 @@ export const getUsuario = async (body) => {
 };
 
 export const putUsuario = async(cpf,body) => {
-  const response = await instancia.put(`/clientes/${body.cpf}`, body);
+  const response = await instancia.put(`/clientes/${cpf}`, body);
   const json = await response.data.msg;
   console.log(json)
   return json;
