@@ -18,7 +18,7 @@ function Header() {
         <Link className={S.btn2} to="/CadClientes">
           Sign up
         </Link>
-        <Link className={S.btn} to="/Login">
+        <Link className={S.btn} to="/Usuario">
           Login
         </Link>
       </div>
