@@ -14,6 +14,7 @@ export default function Card(props) {
         <div className="flip-card-back">
 
           <p>{props.p1}</p>
+          <p>{props.p2}</p>
           <Link className={S.link} to={props.url}>{props.textoBotao}</Link>
 
         </div>
