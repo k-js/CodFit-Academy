@@ -6,7 +6,7 @@ export default function Card(props) {
 
         <div className="flip-card-front">
 
-          <img src={props.imagem} alt="img-destaques" />
+          <img src={props.imagem} />
 
         </div>
 
