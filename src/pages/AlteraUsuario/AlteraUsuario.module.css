@@ -1,0 +1,49 @@
+.form {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 90%;
+    height: calc(100vh - 100px);
+    padding: 30px;
+    display: grid;
+    gap: 30px;
+    background-color: #222;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 150px) 30px 50px;
+    grid-template-areas:
+      "img nome_completo  nome_completo"
+      "img url nome_abreviado "
+      "categoria marca  quantidade"
+      "cor preco  porcentagem_desconto"
+      "desc desc  desc"
+      "desc desc  desc"
+      "btns btns  btns";
+  }
+
+  
+  .buttons {
+    grid-area: btns;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .form :nth-child(2) {
+    grid-area: nome_completo;
+  }
+  .form :nth-child(3) {
+    grid-area: nome_abreviado;
+  }
+  .form :nth-child(4) {
+    grid-area: url;
+  }
+  .form :nth-child(5) {
+    grid-area: categoria;
+  }
+  .form :nth-child(6) {
+    grid-area: marca;
+  }
+  .form :nth-child(7) {
+    grid-area: quantidade;
+  }
+  

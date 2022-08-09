@@ -29,8 +29,8 @@ const AlteraUsuario = () => {
   function handleDelete() {
 
   }
-  function handleSave() {
-    putUsuario(cpf,dadosForm)
+  async function handleSave() {
+   await putUsuario(dadosForm)
   }
   return (
 

@@ -16,7 +16,6 @@
 }
 
 .fieldset > input {
-  width: 100%;
   background: #ccc;
   border-radius: 5px;
   font-size: 12px;
