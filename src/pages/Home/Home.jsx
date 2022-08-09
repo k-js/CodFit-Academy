@@ -9,14 +9,14 @@ const Home = () => {
       <div className={S.inner}>
         <section className={S.section}>
           <div className={S.content}>
-            <header>
+            <div>
               <h1 className={S.h1}>
                 Hi, I’m Editorial
                 <br lassName={S.br} />
                 by HTML5 UP
               </h1>
               <p className={S.p}>A free and fully responsive site template</p>
-            </header>
+            </div>
             <p className={S.p}>
               Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
               aliquam facilisis ante interdum congue. Integer mollis, nisl amet
