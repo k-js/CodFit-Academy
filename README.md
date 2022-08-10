@@ -3,7 +3,7 @@
 </h4>
 
 <h1 align="center" style='font-family: Righteous'> COT FIT - Academy 💪 </h1>
-<img src="./src/assets/img/BANNER_COT_FIT.png">
+<img src="./src/assets/img/BANNER_README_COTFIT.png">
 
 <h2>🎯 Objetivo 💡</h2>
 
