@@ -7,15 +7,17 @@
   align-items: flex-start;
 }
 
-.fieldset > label {
+.label {
+  display: flex;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   margin-bottom: 25px;
+  justify-content: space-between;
 }
 
-.fieldset > input {
+.input {
   background: #ccc;
   border-radius: 5px;
   font-size: 12px;

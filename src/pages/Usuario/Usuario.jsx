@@ -29,11 +29,11 @@ const Usuario = () => {
         const json = await getUsuario(dadosForm)
         if(json.length > 0){
           alert("CPF válido");
-          navigate("/AlteraUsuario/:cpf")
+          console.log(`Usuario ${json.cpf}`)
+          navigate(`/AlterarUsuario/${dadosForm.cpf}`)
+        }
+        else{
           //redirecionar para rota da pagina home
-          
-        }else{
-          alert("CPF inválido");
         }
 
        limpaForm();
@@ -59,6 +59,7 @@ const Usuario = () => {
             
             event.preventDefault()
             logar();
+            navigate(`/AlteraUsuario/${inputCPF}`)
             }}>Entrar </button> 
         </div>
         

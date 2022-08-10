@@ -25,6 +25,12 @@ export const getUsuario = async (body) => {
   return json;
 };
 
+export const getProdutosById = async (valorInput) => {    
+  const response = await instancia.get(`/clientes/${valorInput}`);
+  const json = await response.data;
+  return json;
+}
+
 export const putUsuario = async(cpf,body) => {
   const response = await instancia.put(`/clientes/${cpf}`, body);
   const json = await response.data.msg;

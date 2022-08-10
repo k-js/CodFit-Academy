@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom'
 
 const AlteraUsuario = () => {
     const params = useParams()
+    console.log(params)
     const campos = [
     { keyState: 'nome', label: 'Nome', type: 'text' },
     { keyState: 'telefone', label:'Telefone', type: 'text' },
@@ -31,12 +32,12 @@ const AlteraUsuario = () => {
   function handleDelete() {
 
   }
+  
   async function handleSave() {
    await putUsuario(params.cpf, dadosForm)
-  }
-  return (
-
-    <form action="" className={S.form}>
+  } return (
+    <div className={S.form}>
+    <form action="" className={S.forms} >
       {campos.map((campo, index) => {
         return (
           <Fieldsets
@@ -50,12 +51,13 @@ const AlteraUsuario = () => {
           />
         )
       })}
+    </form>
       <section className={S.buttons}>
         <Button text='cancelar' color='preto' />
         <Button text='Excluir' color='preto' />
         <Button text='Salvar' color='amarelo' onclick={handleSave()} />
       </section>
-    </form>
+    </div>
   )
 }
 
