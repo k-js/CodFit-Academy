@@ -4,6 +4,8 @@ const instancia = axios.create({
   baseURL: "https://academy-8.herokuapp.com", //inserir url do heroku
 });
 
+export default instancia;
+
 export const postCadastro = async (body) => {
   console.log("logando o body");
   console.log(body);
@@ -16,7 +18,15 @@ export const postCadastro = async (body) => {
   return "ok";
 };
 
-export const getUsuario = async (body) => {
+export const getUsuario = async () => {
+  const response = await instancia.get("/clientes");
+  const json = await response.data;
+  console.log(json);
+  //return json;
+  return json;
+};
+
+export const getUsuarioCpf = async (body) => {
   console.log("logando o body");
   console.log(body.cpf);
   const response = await instancia.get(`/clientes/${body.cpf}`);
@@ -25,11 +35,16 @@ export const getUsuario = async (body) => {
   return json;
 };
 
-
-export const putUsuario = async(cpf,body) => {
+export const putUsuario = async (cpf, body) => {
   const response = await instancia.put(`/clientes/${cpf}`, body);
   const json = await response.data.msg;
-  console.log(json)
+  console.log(json);
   return json;
-}
+};
 
+export const deleteUsuario = async (cpf) => {
+  const response = await instancia.delete(`/clientes/${cpf}`);
+  const json = await response.data.msg;
+  console.log(json);
+  return json;
+};

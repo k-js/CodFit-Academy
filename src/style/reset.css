@@ -1,16 +1,10 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    width: 100%;
-    min-height: 100vh;
-    --primaria: #ffb200;
-    --secundaria: #222;
-    --preto: #101010;
-    --cinza: #333;
-    --branco: #f2f2f2;
-    font-family: 'Montserrat', sans-serif;
+:root {
+  width: 100%;
+  min-height: 100vh;
 }

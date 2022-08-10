@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 .TabValores {
-    background-color: #f1eeeb;
-    padding-bottom: 8.5rem;
-  }
+  background-color: #f1eeeb;
+  padding-bottom: 8.5rem;
+}
+.destaques {
+  margin-bottom: 5rem;
+}
+@media (min-width: 760px) {
   .destaques {
-    margin-bottom: 5rem;
+    margin: 1rem 0 5rem 0;
   }
-  @media (min-width: 760px) {
-    .destaques {
-      margin: 1rem 0 5rem 0;
-    }
+}
+@media (min-width: 1100px) {
+  .destaques {
+    margin: 10rem 0 5rem 0;
   }
-  @media (min-width: 1100px) {
-    .destaques {
-      margin: 10rem 0 5rem 0;
-    }
-  }
+}

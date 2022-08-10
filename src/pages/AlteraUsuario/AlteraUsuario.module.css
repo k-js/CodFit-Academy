@@ -1,36 +1,28 @@
-.form {
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    width: 90%;
-    height: calc(100vh - 100px);
-    padding: 30px;
-    display: grid;
-    gap: 30px;
-    background-color: #222;
-    grid-template-columns: repeat(3, 1fr);
-       /* grid-template-areas:
-      "img nome_completo  nome_completo"
-      "img url nome_abreviado "
-      "categoria marca  quantidade"
-      "cor preco  porcentagem_desconto"
-      "desc desc  desc"
-      "desc desc  desc"
-      "btns btns  btns"; */
-  }
-.forms{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    margin: 40px;
-}
-  
-  .buttons {
-    grid-area: btns;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: bisque;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-  
+.form {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 70%;
+  height: calc(100vh - 100px);
+  padding: 30px;
+  display: grid;
+  gap: 30px;
+  background-color: #222;
+  grid-template-columns: repeat(3, 1fr);
+}
+.forms {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+}
+
+.img {
+  width: 300px;
+}
+.container {
+  font-family: "Poppins", sans-serif;
+  padding: 2px 5px;
+  margin-top: 20px;
+}

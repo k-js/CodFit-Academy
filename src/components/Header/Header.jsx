@@ -8,7 +8,7 @@ function Header() {
       <img className={S.imge} src={logo} alt="" />
       <nav className={S.nav}>
         <Link className={S.subtitulo} to="/home">
-          Home
+          Inicio
         </Link>
         <Link className={S.subtitulo} to="/planos">
           Planos
@@ -16,10 +16,13 @@ function Header() {
       </nav>
       <div className={S.div}>
         <Link className={S.btn2} to="/CadClientes">
-          Sign up
+          Cadastrar
         </Link>
         <Link className={S.btn} to="/Usuario">
-          Login
+          Entrar
+        </Link>
+        <Link className={S.btn} to="/Adm">
+          Administrador
         </Link>
       </div>
     </header>

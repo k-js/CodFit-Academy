@@ -1,65 +1,77 @@
-import React, { useState } from 'react'
-import S from './AlteraUsuario.module.css'
-import Fieldsets from '../../components/Fieldsets/Fieldsets.jsx'
-import Button from '../../components/Button/Button.jsx'
-import { useParams } from 'react-router-dom'
-import { putUsuario } from '../../service/api.js'
+import React, { useState } from "react";
+import S from "./AlteraUsuario.module.css";
+import Fieldsets from "../../components/Fieldsets/Fieldsets.jsx";
+import Button from "../../components/Button/Button.jsx";
+import { useNavigate, useParams } from "react-router-dom";
+import { deleteUsuario, getUsuarioCpf, putUsuario } from "../../service/api.js";
+import { useEffect } from "react";
 
 
 const AlteraUsuario = () => {
-    const params = useParams()
+  const navigate = useNavigate();
+  const params = useParams();
 
-    const campos = [
-    { keyState: 'nome', label: 'Nome', type: 'text' },
-    { keyState: 'telefone', label:'Telefone', type: 'text' },
-    { keyState: 'cpf', label:'CPF', type: 'text' }
-]
+  const campos = [
+    { keyState: "nome", label: "Nome", type: "text" },
+    { keyState: "telefone", label: "Telefone", type: "text" },
+    { keyState: "cpf", label: "CPF", type: "text" },
+  ];
 
   const [dadosForm, setDadosForm] = useState({
-    nome: '',
-    telefone: '',
-    cpf: '',
-  })
+    nome: "",
+    telefone: "",
+    cpf: "",
+    id: "",
+  });
 
   function handleChange(target, key) {
-    const value = target.value
-    setDadosForm({ ...dadosForm, [key]: value })
-
+    const value = target.value;
+    setDadosForm({ ...dadosForm, [key]: value });
   }
 
-  function handleCancel() {
-
+  async function request() {
+    const response = await getUsuarioCpf({ cpf: params.cpf });
+    setDadosForm(response[0]);
+    console.log(response);
   }
-  function handleDelete() {
 
+  useEffect(() => {
+    request();
+  }, []);
+
+ 
+  async function handleDelete() {
+    const response = await deleteUsuario(params.cpf);
+    navigate('/home')
   }
-  
+
   async function handleSave() {
-   await putUsuario(params.cpf, dadosForm)
-  } return (
+    await putUsuario(params.cpf, dadosForm);
+  }
+
+  return (
     <div className={S.form}>
-    <form action="" className={S.forms} >
-      {campos.map((campo, index) => {
-        return (
-          <Fieldsets
-            style={{ gridArea: campos.keyState }}
-            key={index}
-            label={campo.label}
-            type={campo.type}
-            keyState={campo.keyState}
-            value={dadosForm[campo.keyState]}
-            onChange={handleChange}
-          />
-        )
-      })}
-    </form>
+      <form action="" className={S.forms}>
+        {campos.map((campo, index) => {
+          return (
+            <Fieldsets
+              style={{ gridArea: campos.keyState }}
+              key={index}
+              label={campo.label}
+              type={campo.type}
+              keyState={campo.keyState}
+              value={dadosForm[campo.keyState]}
+              onChange={handleChange}
+            />
+          );
+        })}
+      </form>
       <section className={S.buttons}>
-        <Button text='cancelar' color='preto' />
-        <Button text='Excluir' color='preto' />
-        <Button text='Salvar' color='amarelo' onclick={handleSave()} />
+        <Button text="Excluir" color="preto" onclick={handleDelete} />
+        <Button text="Salvar" color="amarelo" onclick={handleSave} />
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default AlteraUsuario
+export default AlteraUsuario;

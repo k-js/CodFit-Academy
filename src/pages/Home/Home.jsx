@@ -1,7 +1,7 @@
 import React from "react";
 import imgHome from "../../assets/img/conteudo.png";
 import S from "./Home.module.css";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -10,9 +10,7 @@ const Home = () => {
         <section className={S.section}>
           <div className={S.content}>
             <div>
-              <h1 className={S.h1}>
-               Jornada do cliente COD FIT
-              </h1>
+              <h1 className={S.h1}>Jornada do cliente COD FIT</h1>
               <p className={S.p}>A free and fully responsive site template</p>
             </div>
             <p className={S.p}>
@@ -24,7 +22,7 @@ const Home = () => {
               nullam.
             </p>
             <Link to="/planos" className={S.btn}>
-                  Learn More
+              Saber mais
             </Link>
           </div>
           <span className={S.image}>
