@@ -26,6 +26,10 @@
     font-family: "Poppins", sans-serif;
   }
 
+  p{
+    color:black
+  }
+
   img{
     width: 600px;
     height: 350px;
