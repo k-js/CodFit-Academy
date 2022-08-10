@@ -1,9 +1,16 @@
-import React from 'react'
+import Destaques from "./Destaques/Destaques";
+import S from "./Planos.css";
 
-const Planos = () => {
+
+
+export default function Planos() {
+
   return (
-    <div>Planos</div>
-  )
+    <main className={S.TabValores}>
+      
+      <section className={S.destaques}>
+        <Destaques />
+      </section>
+    </main>
+  );
 }
-
-export default Planos
