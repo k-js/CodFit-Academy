@@ -1,18 +1,23 @@
-import react from "react";
-import "./Footer.css";
+//import React from "react";
+import S from "../Footer/Footer.module.css";
+import logo from "../../assets/img/dumbbell.png";
 
 function Footer() {
     return (
-        <p>COD ACADEMIA
+        <footer className="footer">
+            <nav className='separar'>
+            <img className={S.imge} src={logo} alt="" />
+            </nav>
+            <div>
+        <p>CODFIT ACADEMIA</p> 
 
-        Av. Anita Garibaldi, 300 | Cabral
+        <p>Av. Anita Garibaldi, 300 | Cabral</p>
         
-        (ao lado do Resilia)
-        Tel.: (41) 3538-0000
-        <span>
-        <a href='mailto:contato@codfitcademia.com.br'></a>
-        </span>
-        </p>
+        <p>(ao lado da Resilia Educação)</p>
+        <p>Tel.: (41) 3000-0000</p>
+        <a href='mailto:contato@codfitcademia.com.br'>contato@codfitcademia.com.br</a>
+            </div>
+        </footer>
     )
 }
 
