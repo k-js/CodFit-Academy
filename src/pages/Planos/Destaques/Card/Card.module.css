@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+.flipCard {
+    background-color: rgba(6, 212, 248, 0.756);
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 30px; */
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.347);
+    box-shadow: 2px 2px 2px 2px grey;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .frente {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 610px;
+    gap: 15px;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  p{
+    color:black
+  }
+
+  img{
+    width: 600px;
+    height: 350px;
+  }
+
+  .nomeCard{
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* .flip-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #07a0c3;
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .flip-card-back p {
+    justify-content: left;
+  }
+   */
+  .link{
+  width: 150px;
+  height: 30px;
+  background-color: rgba(6, 212, 248, 0.756);
+  border: none;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  color: black;
+  padding: 3px;
+  align-self: center;
+  margin-bottom: 5px;
+  }
+
+  .link:hover{
+  border-color: rgb(252, 205, 245);
+    color: rgb(205, 252, 251);
+    background: black;
+  }
+
+  /* @media (min-width: 760px) {
+    .flip-card {
+      height: 250px;
+      width: 250px;
+    }
+  } */
