@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
-import { putUsuario } from '../../service/api.js'
 import S from './AlteraUsuario.module.css'
 import Fieldsets from '../../components/Fieldsets/Fieldsets.jsx'
 import Button from '../../components/Button/Button.jsx'
 import { useParams } from 'react-router-dom'
+import { putUsuario } from '../../service/api.js'
+
 
 const AlteraUsuario = () => {
     const params = useParams()
-    console.log(params)
+
     const campos = [
     { keyState: 'nome', label: 'Nome', type: 'text' },
     { keyState: 'telefone', label:'Telefone', type: 'text' },
-    { keyState: 'cpf', label:'cpf', type: 'text' }
+    { keyState: 'cpf', label:'CPF', type: 'text' }
 ]
 
   const [dadosForm, setDadosForm] = useState({

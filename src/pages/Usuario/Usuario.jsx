@@ -27,14 +27,13 @@ const Usuario = () => {
         console.log("logar dados form");
         console.log(dadosForm);
         const json = await getUsuario(dadosForm)
-        if(json.length > 0){
-          alert("CPF válido");
-          console.log(`Usuario ${json.cpf}`)
-          navigate(`/AlterarUsuario/${dadosForm.cpf}`)
-        }
-        else{
-          //redirecionar para rota da pagina home
-        }
+        // if(json.length > 0){
+        //   console.log(`Usuario ${json.cpf}`)
+        //   navigate(`/AlterarUsuario/${dadosForm.cpf}`)
+        // }
+        // else{
+        //   //redirecionar para rota da pagina home
+        // }
 
        limpaForm();
 
@@ -54,13 +53,14 @@ const Usuario = () => {
         <input className ="usuario" placeholder="CPF" type="number" value={inputCPF} onChange={({target})=>handleInputCPF(target)}/>
         <input className ="usuario"  placeholder="SENHA" type="password"value={inputSenha} onChange={({target})=>handleInputSenha(target)}/>
         
-        <div className='button'>
-        <button onClick={(event)=>{
+        <div >
+        <button className='button2' onClick={(event)=>{
             
             event.preventDefault()
             logar();
             navigate(`/AlteraUsuario/${inputCPF}`)
             }}>Entrar </button> 
+       
         </div>
         
     </form>

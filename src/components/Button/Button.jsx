@@ -4,12 +4,13 @@ import S from './Button.module.css'
 const Button = ({ text, onclick, color }) => {
   const cores = {
     preto: {
-      color: '#ffb200',
-      backgroundColor: '#101010'
+      
+      backgroundColor: 'transparent',
+      color: '#3d4449'
     },
     amarelo: {
-      backgroundColor: '#ffb200',
-      color: '#101010'
+      color: '#3d4449',
+      backgroundColor: 'trans'
     }
   }
   return (

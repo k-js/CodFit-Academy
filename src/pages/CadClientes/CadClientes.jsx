@@ -108,8 +108,6 @@ function limpaForm() {
           cadastrar();
           }}>Enviar cadastro</button> 
 
-       
-
       </form>
     </section>
   );

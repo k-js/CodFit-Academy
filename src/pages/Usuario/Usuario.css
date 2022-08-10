@@ -1,7 +1,6 @@
 .usuario{
     display: grid;
     flex-direction: column;
-    width: 25%;
 
 }
 
@@ -13,28 +12,41 @@
     margin-left: 75px;
 }
 .login{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 90%;
+    height: calc(100vh - 100px);
     display: grid;
-    background-color: #155db1;
+    gap: 30px;
+    background-color: #222;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
     border: 3px solid ;
     border-radius: 7px;
     justify-content: center;
     gap: 50px;
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-left: 400px;
-    margin-right: 450px;
     padding: 15px;
     align-items: center;
 }
-.button{
-    display: grid;
-    flex-direction: column;
-    width: 20%;
-    text-align: center;
-    margin-left: 82px;
-    border-radius: 8px;
-    background-color: #155db1;
-    gap: 50px;
-   
-   
+
+
+
+.button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  10px 30px;
+    border-radius: 10px;
+    border: 2px solid  #3d4449;
+    background-color: transparent;
+    transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    color: bisque;
+    width: 210px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 70px;
 }

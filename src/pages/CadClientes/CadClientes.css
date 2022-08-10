@@ -1,6 +1,5 @@
 .cadastro{
     display: grid;
-    background-color: #155db1;
     border: 3px solid ;
     border-radius: 7px;
     justify-content: center;
@@ -11,7 +10,18 @@
     margin-right: 400px;
     padding: 15px;
     align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 90%;
+    height: calc(100vh - 100px);
+    padding: 30px;
+    display: grid;
+    gap: 30px;
+    background-color: #222;
+    grid-template-columns: repeat(3, 1fr);
 }
+
 
 .text{
     width: 60%;
@@ -27,8 +37,12 @@
 .text>h3{
     font-size: 20px;
     margin-bottom: 30px;
-    color: black;
+    color: #ffffff;
     display: grid;
+}
+
+.text > h1, p{
+    color: #ffffff;
 }
 
 .formCadastro{
@@ -50,8 +64,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 8px;
-    color: #ffffff;
-    background-color:#002973;
+    color: #3d4449;
+    background-color: transparent;
     border: #ffffff 1px solid;
     margin-right: 15px;
     margin-left: 75px;
@@ -62,6 +76,7 @@
     display: flex;
     margin-right: 15px;
     margin-left: 75px;
+    color: #ffffff;
 }
 
 .radioInput>label{

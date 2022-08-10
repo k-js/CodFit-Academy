@@ -6,6 +6,7 @@ import CadClientes from '../pages/CadClientes/CadClientes';
 import Planos from '../pages/Planos/Planos.jsx';
 import Usuario from '../pages/Usuario/Usuario.jsx';
 import AlteraUsuario from '../pages/AlteraUsuario/AlteraUsuario.jsx';
+import NotFount from '../pages/NotFount/NotFount.jsx';
 
 const Routes = () => {
   return (
@@ -17,7 +18,8 @@ const Routes = () => {
       <Route path='/CadClientes' element={<CadClientes/>}/>
       <Route path='/planos' element={<Planos/>}/>
       <Route path='/Usuario' element={<Usuario/>}/>
-      <Route path='/AlteraUsuario/:cpf' element={<AlteraUsuario/>}/>
+      <Route path='/AlteraUsuario' element={<AlteraUsuario/>}/>
+      <Route path='/AlterarUsuario/' element={<NotFount/>} />
     </Switch>
     </BrowserRouter>
   ) 

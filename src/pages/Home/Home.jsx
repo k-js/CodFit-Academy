@@ -11,8 +11,7 @@ const Home = () => {
           <div className={S.content}>
             <div>
               <h1 className={S.h1}>
-                Hi, I’m Editorial
-                by HTML5 UP
+               Jornada do cliente COD FIT
               </h1>
               <p className={S.p}>A free and fully responsive site template</p>
             </div>
