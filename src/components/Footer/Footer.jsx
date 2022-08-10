@@ -1,15 +1,11 @@
 //import React from "react";
-import S from "../Footer/Footer.module.css";
-import logo from "../../assets/img/dumbbell.png";
+
 
 function Footer() {
     return (
         <footer className="footer">
-            <nav className='separar'>
-            <img className={S.imge} src={logo} alt="" />
-            </nav>
             <div>
-        <p>CODFIT ACADEMIA</p> 
+        <p>COTFIT ACADEMIA</p> 
 
         <p>Av. Anita Garibaldi, 300 | Cabral</p>
         
