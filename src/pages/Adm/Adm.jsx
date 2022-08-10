@@ -62,6 +62,7 @@ const Adm = () => {
           ))}
         </tbody>
       </table>
+      <div className={s.buton}></div>
     </main>
   );
 };
